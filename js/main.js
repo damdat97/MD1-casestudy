@@ -55,6 +55,8 @@ function onkeydown(e) {
 function gameOver() {
     if (ball.y > canvas.height - ball.radius)
     {
+        document.getElementById('thua').currentTime = 0;
+        document.getElementById('thua').play();
         clearInterval(startGame);
         text.showGameOver(ctx);
     }
@@ -65,6 +67,8 @@ function gameWin()
     document.getElementById("result").innerHTML= scores;
     if (scores >= 30)
     {
+        document.getElementById('thang').currentTime = 0;
+        document.getElementById('thang').play();
         clearInterval(startGame);
         text.showWin(ctx);
     }

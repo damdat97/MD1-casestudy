@@ -52,6 +52,8 @@ function Brick() {
                     ball.dy = -ball.dy;      //Ball cham vao paddle di len la -dy => khi cham bricks ball se thanh -(-dy)
                     element.statusBricks = false;
                     scores++;
+                    document.getElementById('chamgach').currentTime = 0;
+                    document.getElementById('chamgach').play();
                 }
             }
         });

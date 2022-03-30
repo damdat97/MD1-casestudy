@@ -42,6 +42,8 @@ function Ball() {
             && this.y > paddle.y - paddle.height) {
             this.dy = this.dy*(-this.dy*1.000000001);
             console.log(this.dy);
+            document.getElementById('chamgo').currentTime = 0;
+            document.getElementById('chamgo').play();
         }
     };
 }
