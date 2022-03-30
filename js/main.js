@@ -63,7 +63,7 @@ function gameOver() {
 function gameWin()
 {
     document.getElementById("result").innerHTML= scores;
-    if (scores >= 40)
+    if (scores >= 30)
     {
         clearInterval(startGame);
         text.showWin(ctx);

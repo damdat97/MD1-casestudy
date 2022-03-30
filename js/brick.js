@@ -1,8 +1,8 @@
 arr = [];
 
 function Brick() {
-    this.offSetX = OFF_SET_X;
-    this.offSetY = OFF_SET_Y;
+    this.offSetX = OFF_SET_X; // Thiet lap toa do X
+    this.offSetY = OFF_SET_Y; // Thiet lap toa do Y
     this.marginBetween = MARGIN_BETWEEN;
     this.width = WIDTH_BRICKS;
     this.height = HEIGHT_BRICKS;
